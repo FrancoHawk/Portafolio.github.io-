@@ -8,10 +8,138 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    h1, h2, h3 {
+      transition: color 0.3s ease;
+    }
+
+    a {
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn-descarga {
+      transition: transform 0.2s ease;
+    }
+
+    .btn-descarga:hover {
+      transform: scale(1.05);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2em 0;
+      gap: 1.5em;
+      font-weight: bold;
+      flex-wrap: wrap;
+    }
+
+    .nav li a {
+      text-decoration: none;
+      color: #0077cc;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      background-color: #e0f0ff;
+    }
+
+    .nav li a:hover {
+      background-color: #0077cc;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <!-- Contenido del HTML omitido por brevedad (está en la conversación del Canvas) -->
-  <p>Este es un ejemplo. Usá el contenido real en tu proyecto.</p>
+  <header>
+    <h1>Mi Portafolio de Proyectos</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#redes">Redes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy Franco Mosqueira. Tengo 32 años, nací en Concordia E.Ríos pero actualmente vivo en Bs. As. Soy estudiante de primer año de la carrera Lic. en Producción y Desarrollo de Videojuegos en la UNPAZ.</p>
+    <p>Desde siempre me engancharon los videojuegos y el mundo audiovisual. Me gusta editar. En este portfolio vas a encontrar tres proyectos desarrollados en diferentes motores: Tanda de Penales en Scratch, Lo Que Brota del Cielo en RPG Maker y, por último, El Niño Azul en Unity.</p>
+    <p>Espero que disfrutes explorando mis proyectos y aprendiendo más sobre mi trabajo.</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Mis proyectos</h2>
+
+    <div class="proyecto">
+      <h3>1. Tanda de Penales (Scratch)</h3>
+      <p>¿Podés vencer al arquero Scratch? Apuntá con el mouse, pateá con la tecla Espacio y tratá de meter 10 goles antes de que te ataje 3. Un juego simple y divertido que pone a prueba tu precisión.</p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wWRPI_1T-UE?si=VVvLnbo-uUHtVGrS" title="Tanda de Penales - Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <iframe src="https://scratch.mit.edu/projects/1154166671/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+      <p>
+        <a href="https://scratch.mit.edu/projects/1154166671" target="_blank">🌐 Ver en Scratch</a>
+      </p>
+
+      <p>
+        <a href="https://drive.google.com/drive/folders/1Fzdf6d2-H3nMHOeUB-4D0uCQuSF6XGYK?usp=sharing" class="btn-descarga" target="_blank">⬇️ Descargar juego</a>
+      </p>
+    </div>
+
+    <div class="proyecto">
+      <h3>2. Lo Que Brota del Cielo (RPG Maker)</h3>
+      <p>Es un juego donde encarnás al aventurero Harold, quien en una de sus travesías llega a un reino donde han aparecido misteriosas islas flotantes. A pedido del rey, Harold se embarca en una nueva aventura llena de criaturas extrañas y eventos misteriosos.</p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KoDF1S7Zgxw?si=boucwUEKax_R3vSw" title="Lo Que Brota del Cielo - Gameplay" frameborder="0" allowfullscreen></iframe>
+
+      <p>
+        <a href="https://drive.google.com/drive/folders/1XOUJpvj1D6y74Iykm-m_nk0YpZmxTZ9i?usp=sharing" class="btn-descarga" target="_blank">⬇️ Descargar juego</a>
+      </p>
+    </div>
+
+    <div class="proyecto">
+      <h3>3. El Niño Azul (Unity)</h3>
+      <p>Un juego 3D donde nuestro personaje debe recolectar pelotas en el camino. Al reunirlas todas, desbloqueamos una pelota especial que nos permite explorar aún más el mapa.</p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ziJhXhJKW7E?si=Ooa4ZFOfgGyzHr56" title="El Niño Azul - Gameplay" frameborder="0" allowfullscreen></iframe>
+
+      <p>
+        <a href="https://drive.google.com/drive/folders/1SAIXvHBxztO1mXNZaNqHtK5MavX-lZ_6?usp=sharing" class="btn-descarga" target="_blank">⬇️ Descargar juego</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="redes">
+    <h2>Mis redes</h2>
+    <p>Podés seguirme y ver más de mi contenido en redes sociales:</p>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/franco_hawk/" target="_blank">📸 Instagram: @franco_hawk</a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@BlackHawk_FH" target="_blank">▶️ YouTube: BlackHawk_FH</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:Franco_fnm@hotmail.com">Franco_fnm@hotmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Franco Mosqueira</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
